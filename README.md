@@ -1,67 +1,72 @@
 # Mall Customer Segmentation (KMeans Clustering)
+This project performs customer segmentation on the Mall_Customers dataset using the KMeans clustering algorithm.
+The aim is to group customers based on their Annual Income and Spending Score to understand different customer types.
 
-This project performs customer segmentation on the **Mall_Customers** dataset using the KMeans clustering algorithm.  
-The aim is to group customers based on their **Annual Income** and **Spending Score** to understand different customer types.
+📂 Dataset
+The dataset Mall_Customers.csv contains the following columns:
 
----
+CustomerID — Unique ID assigned to each customer
 
-## 📌 Features
-- **Data Preprocessing**: Selects relevant features for clustering
-- **Elbow Method**: Finds the optimal number of clusters
-- **KMeans Clustering**: Groups customers into segments
-- **Visualization**: Displays cluster distribution with centroids
-- **Data Export**: Saves segmented customer data into a CSV file
+Gender — Gender of the customer
 
----
+Age — Age of the customer
 
-## 📂 Project Structure
+Annual Income (k$) — Annual income in thousands of dollars
 
-├── customer_segmentation.py # Main script
-├── Mall_Customers.csv # Dataset
-├── clustered_customers.csv # Output with clusters
-├── plots/
-│ ├── elbow_method.png # Elbow method graph
-│ └── customer_segments.png # Segmentation result
-└── README.md # Project description
+Spending Score (1-100) — Score assigned based on customer behavior and spending nature
 
+🛠 Requirements
+To run this project, install the following Python libraries:
+-pip install pandas matplotlib scikit-learn
 
-## 🚀 How to Run
-1. **Clone the Repository**
-   1. **Clone the Repository**
-   1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yashvi-data-analyst/Mall-Customer-Segmentation.git
-   cd mall-customer-segmentation
+🚀 How to Run
+Clone the repository:
 
-📊 Sample Visualizations
-1. Elbow Method (Choosing Optimal Clusters)
-2. Customer Segmentation Result
+git clone https://github.com/yashvi-data-analyst/Mall-Customer-Segmentation.git
+cd Mall-Customer-Segmentation
+Place the dataset Mall_Customers.csv in the project directory (already included).
 
-📜 Output
-clustered_customers.csv contains original data + cluster labels:
+Run the Python script:
+-python customer_segmentation.py
 
-CustomerID	Annual Income (k$)	Spending Score (1-100)	Cluster
-1	15	39	4
-2	15	81	2
-...	...	...	...
+📊 Project Workflow
+Import Libraries & Dataset
 
-🛠 Tools & Libraries
+Select Features — Using Annual Income & Spending Score
 
--Python 3.x
--Pandas
--Matplotlib
--Scikit-learn
+Find Optimal Number of Clusters — Using the Elbow Method
 
-✨ Project by Yashvi Verma 
+Apply KMeans Clustering — Group customers into segments
 
+Save Plots — Save both elbow method plot and customer segmentation plot as PNG files
 
- 
+🖼 Output
+Elbow Method Plot
+Helps determine the optimal number of clusters.
+Saved as: elbow_method.png
 
 
 
+Customer Segments Plot
+Shows customer groups in different colors based on their annual income and spending score.
+Saved as: customer_segments.png
 
 
 
+📌 Files in Repository
+Mall_Customers.csv          # Dataset
+customer_segmentation.py    # Main Python script
+elbow_method.png            # Elbow method plot
+customer_segments.png       # KMeans segmentation plot
+README.md                   # Project documentation
+💡 Insights
+Customers with high income & high spending score are the most valuable.
 
+Low income & low spending score group may need promotions to increase engagement.
 
+Middle segments can be targeted for upselling strategies.
+
+✍ Author
+Yashvi Verma
+Data Analyst | Machine Learning Enthusiast
 
