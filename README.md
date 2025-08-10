@@ -31,14 +31,11 @@ Run the Python script:
 
 📊 Project Workflow
 Import Libraries & Dataset
-
 Select Features — Using Annual Income & Spending Score
-
 Find Optimal Number of Clusters — Using the Elbow Method
-
 Apply KMeans Clustering — Group customers into segments
-
 Save Plots — Save both elbow method plot and customer segmentation plot as PNG files
+
 
 🖼 Output
 Elbow Method Plot
