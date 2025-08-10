@@ -27,9 +27,11 @@ The aim is to group customers based on their **Annual Income** and **Spending Sc
 
 ## 🚀 How to Run
 1. **Clone the Repository**
+   1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/mall-customer-segmentation.git
+   git clone https://github.com/yashvi-data-analyst/Mall-Customer-Segmentation.git
    cd mall-customer-segmentation
+
 📊 Sample Visualizations
 1. Elbow Method (Choosing Optimal Clusters)
 2. Customer Segmentation Result
