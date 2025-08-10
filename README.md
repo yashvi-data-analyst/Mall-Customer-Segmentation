@@ -67,8 +67,7 @@ Middle segments can be targeted for upselling strategies.
 ## 🎥 Demo
 
 You can watch the step-by-step execution of this project in the following screen recording:
-
-[![Watch the demo](https://drive.google.com/file/d/1ogJmlzBOE5Bur_sM9AW1Y-M79cWcYEQt/view?usp=drivesdk)
+(https://drive.google.com/file/d/1ogJmlzBOE5Bur_sM9AW1Y-M79cWcYEQt/view?usp=drivesdk)
 
 
 ✍ Author
