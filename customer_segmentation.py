@@ -15,7 +15,7 @@ X = df[['Annual Income (k$)', 'Spending Score (1-100)']]
 # Step 3: Find optimal number of clusters (Elbow Method)
 wcss = []
 for i in range(1, 11):
-    kmeans = KMeans(n_clusters=i, init='k-means++', random_state=42)
+    kmeans = KMeans(n_clusters=i, init='k-means++',n_init=10, random_state=42)
     kmeans.fit(X)
     wcss.append(kmeans.inertia_)
 
@@ -27,7 +27,7 @@ plt.savefig("plots/elbow_method.png")  # Save elbow plot
 plt.show()
 
 # Step 4: Apply KMeans with optimal clusters (let's say 5)
-kmeans = KMeans(n_clusters=5, init='k-means++', random_state=42)
+kmeans = KMeans(n_clusters=5, init='k-means++',n_init=10, random_state=42)
 y_kmeans = kmeans.fit_predict(X)
 
 # Step 5: Visualization
